@@ -1,0 +1,14 @@
+name: staging
+
+on:
+  push:
+    paths:
+      - 'staging/*'
+
+jobs:
+  build:
+    runs-on: zillownyc/kustomize:v3.1.0
+    steps:
+      - uses: actions/checkout@v1
+      - name: Run a one-line script
+        run: kustomize build stagin
