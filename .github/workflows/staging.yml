@@ -7,8 +7,13 @@ on:
 
 jobs:
   build:
-    runs-on: zillownyc/kustomize:v3.1.0
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Run a one-line script
-        run: kustomize build staging
+      - name: Kubernetes toolset
+        uses: stefanprodan/kube-tools@v1.0.0
+        with:
+          kubectl: 1.16.2
+          kustomize: 3.2.3
+          command: kustomize build staging
+         
