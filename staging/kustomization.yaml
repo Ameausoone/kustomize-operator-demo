@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
 - github.com/Ameausoone/discover-kustomize/iso/overlays/staging?ref=master
 namespace: staging
+
