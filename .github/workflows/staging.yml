@@ -7,7 +7,6 @@ on:
 
 jobs:
   build:
-    entrypoint: ""
     runs-on: zillownyc/kustomize:v3.1.0
     steps:
       - uses: actions/checkout@v1
