@@ -24,5 +24,5 @@ jobs:
         with:
           kubectl: 1.16.2
           kustomize: 3.2.3
-          command: kustomize build staging
+          command: kustomize build staging | kubectl apply --dry-run -o yaml -f -
          
