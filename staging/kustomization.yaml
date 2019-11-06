@@ -5,6 +5,9 @@ resources:
 
 namespace: staging
 
+patchesStrategicMerge:
+  - deployment.yaml
+
 images:
   - name:  nginx
     newName: ameausoone/env
