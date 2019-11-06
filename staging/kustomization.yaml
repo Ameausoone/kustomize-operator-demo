@@ -6,7 +6,7 @@ resources:
 namespace: staging
 
 images:
-  - name: busybox
+  - name:  nginx
     newName: ameausoone/env
     newTag: latest
 
