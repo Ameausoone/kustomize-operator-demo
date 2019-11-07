@@ -18,3 +18,4 @@ configMapGenerator:
     literals:
       - app_env=dev
       - app_db_host=dbhost
+      - app_db_port=1234
