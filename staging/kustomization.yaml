@@ -18,5 +18,5 @@ configMapGenerator:
     literals:
       - app_env=dev
       - app_db_host=dbhost
-      - app_db_port=1234
+      - app_db_port=12345
       - app_db_toto=titi
