@@ -19,4 +19,4 @@ configMapGenerator:
       - app_env=dev
       - app_db_host=dbhost
       - app_db_port=12345
-      - app_db_toto=titi
+      - app_db_toto=tutu
