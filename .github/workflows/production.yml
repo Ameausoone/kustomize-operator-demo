@@ -1,4 +1,4 @@
-name: production
+name: Deploy to production
 
 on:
   push:
@@ -11,14 +11,14 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Get kubeconfig file from GKE
-        uses: machine-learning-apps/gke-kubeconfig@master
+        uses: machine-learning-apps/gke-kubeconfig@89993c4
         with:
           application_credentials: ${{ secrets.APPLICATION_CREDENTIALS }}
           project_id: ${{ secrets.PROJECT_ID }}
           location_zone: ${{ secrets.LOCATION_ZONE }}
           cluster_name: ${{ secrets.CLUSTER_NAME }}
       - name: Kubernetes toolset
-        uses: stefanprodan/kube-tools@v1.0.0
+        uses: stefanprodan/kube-tools@683e1f4
         env:
           KUBECONFIG: '/github/workspace/.kube/config'
         with:
